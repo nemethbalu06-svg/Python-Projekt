@@ -1,0 +1,35 @@
+Dead by Daylight adatelemzés
+
+Az analysis.ipynb egy Jupyter-jegyzetfüzet, amely 11 CSV-fájlból hét
+interaktív diagramot és egy kereszttáblát készít.
+
+Futtatás
+
+Colabban töltsd fel az analysis.ipynb fájlt, majd válaszd a
+Futtatókörnyezet → Összes futtatása menüpontot.
+
+Helyben futtasd ezeket a projekt mappájában:
+  python -m pip install -r requirements.txt
+  python -m jupyterlab analysis.ipynb
+Ezután futtasd az összes cellát sorrendben.
+
+A jegyzetfüzet a helyi dataset mappából olvassa a CSV-ket. Ha nincs
+ilyen mappa, a nyilvános GitHub-tárolóból tölti be őket, amihez
+internetkapcsolat kell. A diagramok a cellák alatt jelennek meg.
+
+Mit mutatnak a diagramok?
+
+1. Karakterek – 22 gyilkos és 24 túlélő.
+2. Képességek – átlagosan 3 saját képesség jut egy karakterre mindkét
+   szerepkörben. Az általános képességek külön szerepelnek. A boxplot
+   mutatja, hogy a saját képességek száma egyik szerepkörben sem szóródik.
+3. Pályák – 35 pálya 15 realm között.
+4. Tárgyak és kiegészítők – darabszám kategória és ritkaság szerint.
+5. Felajánlások – darabszám szerepkör és ritkaság szerint.
+   A kereszttábla ugyanezeket a darabszámokat ritkaságonkénti
+   sorokban, külön Gyilkos és Túlélő oszlopban mutatja.
+6. Treemap – a tárgyak, kiegészítők és felajánlások megoszlása
+   kategória, szerepkör és ritkaság szerint.
+
+A pandas beolvassa és csoportosítja az adatokat, a NumPy kiszámítja
+a képességek átlagát, a Plotly pedig megrajzolja a diagramokat.
