@@ -4,16 +4,8 @@ Az analysis.ipynb a játék karaktereit, képességeit, pályáit, tárgyait,
 kiegészítőit és felajánlásait összesíti. Az elmentett diagramok és a
 felajánlások táblázata a results mappában vannak.
 
-Colabban nyisd meg az analysis.ipynb fájlt, és futtasd az összes cellát.
-Helyben a projekt mappájából indítsd:
-
-    python -m pip install -r requirements.txt
-    python -m jupyterlab analysis.ipynb
-
-Ha nincs helyi dataset mappa, a notebook a GitHubról tölti be a CSV-ket.
-
 Az adatokban 22 gyilkos, 24 túlélő és 35 pálya szerepel. A boxploton
 mindkét doboz vonalnak látszik, mert minden karakternek három saját
 képessége van. A felajánlások táblázatában ritkaság szerint látszik,
-hogy miből mennyi jut a gyilkosoknak és a túlélőknek. A treemapen a
-nagyobb téglalap több tételt jelent.
+hogy miből mennyi jut a gyilkosoknak és a túlélőknek. A treemapen a 
+téglalapok mérete attólfügg, hogy az adott részbe mennyi adat tartozik.
